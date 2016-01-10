@@ -4,7 +4,7 @@
   "description": "Test project for learning reactjs",
   "main": "index.js",
   "scripts": {
-    "build": "NODE_ENV=production browserify -t [ reactify --es6 ] index.jsx | uglifyjs > compiled.min.js",
+    "build": "NODE_ENV=production browserify -t babelify index.jsx -g envify | uglifyjs > compiled.min.js",
     "watch": "NODE_ENV=development watchify index.jsx -t babelify -g envify -o compiled.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "envify": "^3.4.0",
+    "gmaps": "^0.4.22",
     "livereactload": "^2.1.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
