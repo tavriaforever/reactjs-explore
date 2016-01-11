@@ -1,7 +1,7 @@
 import React from 'react';
 import GMaps from 'gmaps';
 
-const Map = React.createClass({
+export default React.createClass({
     componentDidMount() {
         this.componentDidUpdate();
     },
@@ -9,6 +9,7 @@ const Map = React.createClass({
     componentDidUpdate() {
         let map = new GMaps({
             el: '#map',
+            zoom: 12,
             lat: this.props.lat,
             lng: this.props.lng
         });
@@ -30,5 +31,3 @@ const Map = React.createClass({
         </div>;
     }
 });
-
-export default Map;

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const Search = React.createClass({
+export default React.createClass({
     getInitialState() {
         return {
             value: ''
@@ -35,5 +35,3 @@ const Search = React.createClass({
         </form>;
     }
 });
-
-export default Search;

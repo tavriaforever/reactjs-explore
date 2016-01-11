@@ -21,6 +21,7 @@
     "envify": "^3.4.0",
     "gmaps": "^0.4.22",
     "livereactload": "^2.1.0",
+    "moment": "^2.11.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "uglify-js": "^2.6.1",
